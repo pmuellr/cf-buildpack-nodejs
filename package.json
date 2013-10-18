@@ -1,0 +1,16 @@
+{
+  "name":              "cf-buildpack-nodejs",
+  "main":              "./server",
+  "description":       "sample app to use with cf-buildpack-nodejs",
+  "author":            "pmuellr",
+  "version":           "0.1.0",
+  "licenses":          [{ "type": "Apache License" }],
+  "dependencies":
+    {
+      "express":          "3.4.x"
+    },
+  "homepage":          "https://github.com/pmuellr/cf-buildpack-nodejs",
+  "bugs":              "https://github.com/pmuellr/cf-buildpack-nodejs/issues",
+  "repository":        { "url": "git://github.com/pmuellr/cf-buildpack-nodejs", "type": "git" }
+}
+

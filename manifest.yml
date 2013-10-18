@@ -1,0 +1,5 @@
+---
+applications:
+- name: test-cf-buildpack-nodejs
+  command: node app.js
+  buildpack: https://github.com/pmuellr/cf-buildpack-nodejs.git
