@@ -9,18 +9,6 @@ for [CloudFoundry](http://cloudfoundry.com/).
 usage
 --------------------------------------------------------------------------------
 
-in your `manifest.yml` file, you should add an entry for `nodejs-version`, so
-your manifest may look like this:
-
-    ---
-    nodejs-version: v0.10.20
-    applications:
-    - name:      my-app
-      command:   node my-app.js    
-      buildpack: https://github.com/pmuellr/cf-buildpack-nodejs.git
-
-The value for `nodejs-version` should be one of the versioned directories
-relative to <http://nodejs.org/dist/>.
 
 <!--
 #===============================================================================

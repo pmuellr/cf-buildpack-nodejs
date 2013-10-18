@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+cd `dirname $0`/..
+BASE_DIR=`pwd`
+
+mkdir -p ${BASE_DIR}/tmp/staged/app ${BASE_DIR}/tmp/cache
+
+cp ${BASE_DIR}/manifest.yml  ${BASE_DIR}/tmp/staged/app
+cp ${BASE_DIR}/package.json  ${BASE_DIR}/tmp/staged/app
+cp ${BASE_DIR}/server.js     ${BASE_DIR}/tmp/staged/app
+
+cd ${BASE_DIR}/tmp/staged
+
+CMD="${BASE_DIR}/bin/compile ${BASE_DIR}/tmp/staged/app ${BASE_DIR}/tmp/cache"
+${CMD}

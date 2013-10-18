@@ -4,8 +4,7 @@
 
 # bin/compile <build-dir> <cache-dir>
 
-echo "about to run `pathname $0`/compile.py $1 $2"
-python `pathname $0`/compile.py $1 $2
+python `dirname $0`/compile.py $1 $2
 
 exit
 
